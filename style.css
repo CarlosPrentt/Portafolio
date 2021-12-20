@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bellota+Text&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #131313ee;
+    
+}
+
+.home {
+    z-index: 1;
+    width: 25.7%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all 1s;
+}
+
+.logo-img {
+    width: 45%;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#000, #000, #000, rgb(0, 0, 0),#030303f8, #000000ef, #131313ee);
+}
+
+
+.wave {
+    width: 6000px;
+    height: 403px;
+    position: absolute;
+    left: 0;
+    background-image: url(./assets/Vector.svg);
+    background-repeat: repeat-x;
+    overflow: hidden;
+
+}
+
+.w1 {
+    animation: w1 2s linear infinite;
+    overflow: hidden;
+
+}
+
+@keyframes w1 {
+    0% {
+        margin-left: 0 ;
+    }
+    100% {
+        margin-left: -500px;
+    }
+}
+
+
+span {
+    display: block;
+}
+
+.link-project {
+    color: #fff;
+    text-decoration: none;
+}
+
+.title {
+    position: absolute;
+    top: 45vh;
+    font-family: 'Bellota Text', cursive;
+    font-weight: normal;
+}
+
+.title-name {
+    color: #D4D4D4;
+}
+
+.title-description {
+    font-size: 15px;
+    text-align: center;
+    color: #A5A5A5;
+}
+
+.projects, .about-me, .contact {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131313ee;
+    
+}
+
+.project-container, .aboutme-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0px 90px 0px;
+    
+}
+
+.name, hr {
+    font-family: 'Bellota Text', cursive;
+    font-weight: normal;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    color: #D4D4D4;
+}
+
+hr {
+    border-color: #d4d4d46b;
+    width: 50px;
+    top: 55px;
+}
+
+.project-name {
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.img-project {
+    width: 60%;
+    margin-left: 50px;
+}
+
+.img-bible {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    opacity: .5;
+    transition: all .5s;
+}
+
+.img-bible:hover {
+    opacity: 1;
+}
+
+.arrow {
+    color: rgba(255, 255, 255, 0.438);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.arrow:active {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.btn-project, .btn-about, .btn-contact {
+    border: 0.3px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #d4d4d46b;
+    cursor: pointer;
+}
+
+.btn-project:active, .btn-about:active, .btn-contact:active {
+    transform: scale(0.98);
+}
+
+.about-title, .contact-title {
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.img-about-container, .img-contact-container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*--------- WINDOW THAT APPEARS IN ABOUT SECTION ------------- */
+
+.ab-window-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: scale(0);
+    width: 80%;
+    position: absolute;
+    height: 130%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #000;
+    transition: all 1s;
+    font-family: 'Bellota Text', cursive;
+    font-size: 20px;
+}
+
+.close {
+    position: absolute;
+    font-size: 15px;
+    top: 50px;
+    right: 50px;
+    color: red;
+    cursor: pointer;
+    font-family: 'Bellota Text', cursive;
+    font-weight: bold;
+    border: 1px solid red;
+    padding: 2px 5px;
+    border-radius: 3px;
+
+}
+
+.img-about, .img-contact {
+    width: 80%;
+}
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 100px 0px 30px 0px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.networks-container {
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fab, .fas {
+    font-size: 40px;
+    cursor: pointer;
+    transition: all .5s;
+    text-decoration: none;
+    color: #000;
+}
+
+
+@media screen and (min-width: 600px){
+    .home {
+        width: 100%;
+    }
+
+    .logo-img {
+        width: 15%;
+    }
+
+    .wave {
+    background-image: url(./assets/wave-desktop.svg);
+    }
+
+    .w1 {
+        animation: w1 7s linear infinite;
+    }
+    
+    @keyframes w1 {
+        0% {
+            margin-left: 0 ;
+        }
+        100% {
+            margin-left: -1600px;
+        }
+    }
+
+    .title-name {
+        font-size: 50px;
+    }
+    
+    .title-description {
+        font-size: 20px;
+    }
+
+    .name {
+        margin-top: 30px;
+    }
+
+    hr {
+        margin-top: 30px;
+    }
+
+    .project-container, .aboutme-container, .contact-container {
+        width: 100%;
+        padding: 0px 50px;
+        overflow: hidden;
+    }
+
+    /*--------- WINDOW THAT APPEARS IN ABOUT SECTION ------------- */
+
+    .ab-window-container {
+        width: 50%;
+        height: 100%;
+        
+    }
+    
+
+
+    .img-project, .img-about-container, .img-contact-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img-bible, .img-about, .img-contact {
+        width: 20%;
+        transition: all .5s;
+    }
+
+    
+
+    .project-name, .about-title, .contact-title {
+        font-size: 50px;
+        top: -55%;
+        left: 37%;
+        transition: all 1s;
+    }
+
+    .project-name:hover, .about-title:hover, .contact-title:hover {
+        top: 45%;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .networks-container {
+        margin-bottom: 30px;
+    }
+}
