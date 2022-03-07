@@ -148,13 +148,9 @@ hr {
 .img-bible {
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.212);
-    opacity: .5;
     transition: all .5s;
 }
 
-.img-bible:hover {
-    opacity: 1;
-}
 
 .arrow {
     color: rgba(255, 255, 255, 0.438);
@@ -342,11 +338,19 @@ hr {
         top: -55%;
         left: 37%;
         transition: all 1s;
+        width: 25%;
+        text-align-last: left;
     }
 
-    .project-name:hover, .about-title:hover, .contact-title:hover {
-        top: 45%;
+    .about-title:hover, .contact-title:hover {
+        padding-top: 30%;
     }
+
+    .project-name:hover {
+        padding-top: 20%;
+        cursor: pointer;
+    }
+
 
     .btn {
         display: none;
