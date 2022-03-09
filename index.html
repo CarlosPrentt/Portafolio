@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <link rel="icon" href="./assets/LogoFinal 3.png">
+    <link rel="stylesheet" href="./style.css">
     <title>Carlos Prentt - Portafolio</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
     <header class="header">
         
         <div class="wave w1"></div>
-        <h1 class="title title-name"><spanclass="title-name">Carlos Prentt</span><span class="title-description">Web developer</span></h1>
+        <h1 class="title title-name"><span class="title-name">Carlos Prentt</span><span class="title-description">Web developer</span></h1>
         
      </header>
 
@@ -39,7 +39,7 @@
             <button class="btn btn-about" onclick="openAbout()">Know more</button>
         </div>
     </section>
-
+<!-- 
     <section class="projects">
         <h2 class="name">Carlos Prentt</h2>
             <hr>
@@ -55,9 +55,43 @@
         <div class="btn-container">
             <a href="https://carlosprentt.github.io/La-Biblia/"><button class="btn btn-project">See project</button></a>
         </div>
+    </section> -->
+
+    <section class="projects">
+        <h2 class="name">Carlos Prentt</h2>
+            <hr>
+        <div class="project-container">
+            <i class="fas fa-chevron-left arrow" id="arrowLeft"></i>
+
+
+            <div class="slider-container" id="slider">
+
+                <div class="img-project">
+                    <!-- <span class="hola">hola</span> -->
+                    <h3 class="project-name"><a class='link-project' href="https://carlosprentt.github.io/La-Biblia/">THE BIBLE <br> PROJECT</a></h3>
+                    <img class="img-bible" src="./assets/Img.png" alt="">
+                </div>
+
+                <div class="img-project">
+                    <h3 class="project-name"><a class='link-project' href="https://moule-artesanias.netlify.app/">CART <br> PROJECT</a></h3>
+
+                    <img class="img-cart" src="./assets/Carrito.png" alt="">
+                </div>
+                <div class="img-project">
+                    <h3 class="project-name"><a class='link-project to-do-name' href="https://todo-list-cp.netlify.app/">TO-DO-LIST <br> PROJECT</a></h3>
+
+                    <img class="img-to-do" src="./assets/Todo-list.png" alt="">
+                </div>
+            </div>
+        
+
+            <i class="fas fa-chevron-right arrow" id="arrowRight" ></i>
+        </div>
+        <div class="btn-container">
+            <a href="https://carlosprentt.github.io/La-Biblia/"><button class="btn btn-project">See project</button></a>
+        </div>
     </section>
 
-   
 
     <section class="contact">
         <h2 class="name">Carlos Prentt</h2>
